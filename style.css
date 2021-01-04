@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: mfont;
+    src: url("C:\Users\AS\Desktop\a\RobotoCondensed.woff") format("woff");
+}
+
+@font-face {
+    font-family: resultfonts;
+    src: url("C:\Users\AS\Desktop\a\DigitalNumbers.woff") format("woff");
+}
+
+.key {
+    font-size: 1.5em;
+    padding: 20px;
+    text-align: center;
+}
+
+#result {
+    text-align: right;
+    font-size: 3.5em;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40%;
+    width: 80%;
+    background-color: #eee;
+    color: #444;
+    font-family: resultfonts;
+}
+
+#app {
+    height: 70%;
+    width: 80%;
+    min-height: 280px;
+    max-width: 580px;
+    position: relative;
+    margin: 100px auto;
+}
+
+#keypad {
+    height: 10.6%;
+    width: 80%;
+    color: #ddd;
+    font-family: myfonts;
+    padding: 0%;
+}
+
+#nums {
+    height: 10.2%;
+    width: 65%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #19676E;
+}
+
+#ops {
+    height: 10.2%;
+    width: 31.5%;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    float: right;
+    background-color: #444;
+    padding: 0%;
+    position: relative;
+    top: -269.5px;
+}
+
+.item {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    background-color: #c43e37;
+}
